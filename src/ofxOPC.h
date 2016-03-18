@@ -107,7 +107,7 @@ class ofxOPC  {
         int _port;
         int _w,_h;
 
-    private:
+    protected:
         ofTrueTypeFont labels;
     
         void connect();
