@@ -43,7 +43,7 @@ typedef struct OPCPacket {
 class ofxOPC  {
     
     public:
-        void setup(string address,int port);
+        void setup(string address,int port, int fadecandyCount = 1);
         void update();
         void draw();
 
@@ -126,6 +126,8 @@ class ofxOPC  {
         float startTime;
         float endTime;
         int connectionAttempts;
+
+        int _fadecandyCount;
     
         // Data Packets
         OPCPacket_t OPC_SPC_packet;
